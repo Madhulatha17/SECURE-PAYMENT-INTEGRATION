@@ -1,0 +1,19 @@
+@model SecurePaymentIntegration.Models.PaymentViewModel
+
+<h2>Stripe Payment</h2>
+
+<form asp-action="Pay" method="post">
+
+    <label>Amount</label>
+
+    <input
+        type="number"
+        step="0.01"
+        name="Amount"
+        required />
+
+    <button type="submit">
+        Pay Now
+    </button>
+
+</form>
